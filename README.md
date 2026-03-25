@@ -2,7 +2,7 @@
 
 ## Description
 
-This is very simple `python` project that reads Atom feed from [Skillshot.pl](https://www.skillshot.pl/) and posts Discord message with Dicord Webhook.
+This is very simple `python` project that reads Atom feed from [Skillshot.pl](https://www.skillshot.pl/) and posts Discord message with Discord Webhook.
 
 ## Features
 
@@ -60,17 +60,11 @@ For continuous monitoring, you can run this script periodically (e.g., via cron 
 
 ## Configuration
 
-- **URL**: The Atom feed URL (currently set to 'http://www.skillshot.pl/jobs/feed/all')
+- **URL**: The Atom feed URL (currently set to http://www.skillshot.pl/jobs/feed/all)
 - **CACHE_FILES**: Path to the cache file (default: 'feed_cache.json')
 - **ROLES**: Discord role mentions for different job categories (customize as needed)
 - **ADDITIONAL_INFO**: Keywords to extract additional job information
 - **EXPERIENCE**: Experience levels to detect in job titles/descriptions
-
-## Third-Party Libraries
-This project is build based on other libraries. It uses the following open-source libraries:
-* **discord-webhook** (MIT) - Used for sending formatted messages to Discord.
-* **feedparser** (BSD-2-Clause) - Used for parsing the Skillshot.pl Atom feed.
-* **requests** (Apache-2.0) - Used for making HTTP requests with ETag support.
 
 ## Legal Disclaimer & Ethics
 
@@ -88,6 +82,12 @@ This bot is built to be a "good citizen" of the web. It respects **Skillshot.pl*
 
 - Using **ETag** and **Last-Modified** HTTP headers to minimize unnecessary data transfer and server load.
 - Implementing a responsible polling interval to ensure compliance with standard web crawler ethics.
+
+## Third-Party Libraries
+This project is build based on other libraries. It uses the following open-source libraries:
+* **discord-webhook** (MIT) - Used for sending formatted messages to Discord.
+* **feedparser** (BSD-2-Clause) - Used for parsing the Skillshot.pl Atom feed.
+* **requests** (Apache-2.0) - Used for making HTTP requests with ETag support.
 
 # License
 
