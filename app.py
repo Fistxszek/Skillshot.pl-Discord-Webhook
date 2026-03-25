@@ -9,12 +9,7 @@ import re
 URL = 'http://www.skillshot.pl/jobs/feed/all'
 CACHE_FILES = 'feed_cache.json'
 
-# WEBHOOK_URL = (
-# 'https://discord.com/api/webhooks/1442169407962091672/G6_H8MDa9IyFr79oSdMERsyLUewatvTruQjGZbCIyrELVC0fFStyxMfcu9QQy38knHlW'
-# )
-WEBHOOK_URL = (
-    'https://discord.com/api/webhooks/1486377780089454673/GhGot9Y7zi3Ndt32q6CfNdmmtHjieFsLRClvh44lqEIvne0iBPR-reqkc02tHLZwyAQ2'
-)
+WEBHOOK_URL = os.environ.get('DISCORD_WEBHOOK_URL')
 
 ADDITIONAL_INFO = [
     "Umowa o pracę",
