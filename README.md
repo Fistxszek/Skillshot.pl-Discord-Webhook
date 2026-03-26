@@ -1,8 +1,11 @@
-# Skillshot-AtomBot
+# [Skillshot.pl](https://www.skillshot.pl/) Discord webhook
 
 ## Description
 
 This is very simple `python` project that reads Atom feed from [Skillshot.pl](https://www.skillshot.pl/) and posts Discord message with Discord Webhook.
+
+> [!INFO]
+> Disclaimer: This bot is an unofficial community project made by me. It is not affiliated with, maintained by, or endorsed by Skillshot.pl."
 
 ## Features
 
@@ -21,7 +24,7 @@ This is very simple `python` project that reads Atom feed from [Skillshot.pl](ht
 
 1. Clone the repository:
    ```
-   git clone https://github.com/Fistxszek/Skillshot-AtomBot.git
+   git clone git@github.com:Fistxszek/Skillshot.pl-Discord-Webhook.git
    ```
 
 2. Install the required Python packages:
@@ -39,7 +42,7 @@ This is very simple `python` project that reads Atom feed from [Skillshot.pl](ht
    export DISCORD_WEBHOOK_URL='your_discord_webhook_url_here'
    ```
 > [!IMPORTANT]  
-> The `ROLES` dictionary in `app.py` maps Skillshot categories to Discord role mentions.
+> The `ROLES` dictionary in `config.py` maps Skillshot categories to Discord role mentions.
 > - Replace the IDs with your own Discord role IDs if you want role ping support to work correctly.
 
 ## Usage
@@ -47,7 +50,7 @@ This is very simple `python` project that reads Atom feed from [Skillshot.pl](ht
 Run the script to check for new job postings and send notifications:
 
 ```
-python3 app.py
+python3 src/main.py
 ```
 
 The bot will:
