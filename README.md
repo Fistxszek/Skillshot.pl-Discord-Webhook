@@ -4,7 +4,7 @@
 
 This is very simple `python` project that reads Atom feed from [Skillshot.pl](https://www.skillshot.pl/) and posts Discord message with Discord Webhook.
 
-> [!INFO]
+> [!NOTE]
 > Disclaimer: This bot is an unofficial community project made by me. It is not affiliated with, maintained by, or endorsed by Skillshot.pl."
 
 ## Features
