@@ -1,9 +1,19 @@
 import os
 
 URL = 'http://www.skillshot.pl/jobs/feed/all'
-CACHE_FILES = 'feed_cache.json'
+FB_URL = 'https://rss.app/feeds/TRCEpTeNX2L4IteC.xml'
+WP_URL = 'https://workplays.it/api/rss.xml'
+CACHE_FILES = 'skillshot_feed_cache.json'
+FB_CACHE_FILES = 'fb_feed_cache.json'
+WP_CACHE_FILES = 'wp_feed_cache.json'
 
 WEBHOOK_URL = os.environ.get('DISCORD_WEBHOOK_URL')
+
+SKILLSHOT='skillshot'
+FB='fb'
+WP='workplays'
+
+MAX_ENTRIES=10
 
 ADDITIONAL_INFO = [
     "Umowa o pracę",

@@ -1,6 +1,6 @@
 import requests
 import feedparser
-from config import URL
+from config import URL, MAX_ENTRIES
 from cache import load_cache, save_cache
 
 
@@ -27,6 +27,8 @@ def get_new_entries():
         response.raise_for_status()
 
         feed = feedparser.parse(response.content)
+
+        entries_to_check = feed.entries[:MAX_ENTRIES]
         new_entries = []
 
         if not last_id:
@@ -34,7 +36,7 @@ def get_new_entries():
         else:
             last_found = False
 
-        for entry in reversed(feed.entries):
+        for entry in reversed(entries_to_check):
             if last_id == entry.id:
                 last_found = True
                 continue
